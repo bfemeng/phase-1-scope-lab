@@ -11,5 +11,5 @@ function setBestCustomer() {
 }
 
 function overwriteBestCustomer() {
-    window.overwriteBestCustomer = "maybe bob";
+    window.bestCustomer = "maybe bob";
 }

@@ -5,15 +5,15 @@
     "passes": 3,
     "pending": 0,
     "failures": 2,
-    "start": "2021-12-12T17:53:09.370Z",
-    "end": "2021-12-12T17:53:09.739Z",
-    "duration": 369
+    "start": "2021-12-12T17:54:38.122Z",
+    "end": "2021-12-12T17:54:38.483Z",
+    "duration": 361
   },
   "tests": [
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -27,7 +27,7 @@
     {
       "title": "setBestCustomer",
       "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -47,7 +47,7 @@
     {
       "title": "unsuccessfully tries to reassign the least favorite customer",
       "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: changeLeastFavoriteCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:37:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -73,7 +73,7 @@
     {
       "title": "unsuccessfully tries to reassign the least favorite customer",
       "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: changeLeastFavoriteCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:37:14)\n    at processImmediate (node:internal/timers:464:21)",
@@ -85,7 +85,7 @@
     {
       "title": "returns the customerName",
       "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -99,7 +99,7 @@
     {
       "title": "setBestCustomer",
       "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     }
