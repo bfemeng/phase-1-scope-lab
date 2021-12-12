@@ -2,12 +2,12 @@
   "stats": {
     "suites": 6,
     "tests": 5,
-    "passes": 3,
+    "passes": 2,
     "pending": 0,
-    "failures": 2,
-    "start": "2021-12-12T17:00:28.546Z",
-    "end": "2021-12-12T17:00:29.199Z",
-    "duration": 653
+    "failures": 3,
+    "start": "2021-12-12T17:24:10.512Z",
+    "end": "2021-12-12T17:24:10.902Z",
+    "duration": 390
   },
   "tests": [
     {
@@ -20,28 +20,30 @@
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "setBestCustomer",
       "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected undefined to equal 'not bob'",
+        "showDiff": true,
+        "expected": "not bob",
+        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:23:38)\n    at processImmediate (node:internal/timers:464:21)"
+      }
     },
     {
       "title": "overwrites the best customer",
       "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 2,
+      "duration": 0,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'not bob' to equal 'maybe bob'",
-        "showDiff": true,
-        "actual": "not bob",
-        "expected": "maybe bob",
-        "stack": "AssertionError: expected 'not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at processImmediate (node:internal/timers:464:21)"
+        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "overwriteBestCustomer is not defined"
       }
     },
     {
@@ -58,16 +60,25 @@
   "pending": [],
   "failures": [
     {
-      "title": "overwrites the best customer",
-      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
-      "duration": 2,
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected 'not bob' to equal 'maybe bob'",
+        "message": "expected undefined to equal 'not bob'",
         "showDiff": true,
-        "actual": "not bob",
-        "expected": "maybe bob",
-        "stack": "AssertionError: expected 'not bob' to equal 'maybe bob'\n    at Context.<anonymous> (test/indexTest.js:31:38)\n    at processImmediate (node:internal/timers:464:21)"
+        "expected": "not bob",
+        "stack": "AssertionError: expected undefined to equal 'not bob'\n    at Context.<anonymous> (test/indexTest.js:23:38)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "ReferenceError: overwriteBestCustomer is not defined\n    at Context.<anonymous> (test/indexTest.js:29:7)\n    at processImmediate (node:internal/timers:464:21)",
+        "message": "overwriteBestCustomer is not defined"
       }
     },
     {
@@ -92,14 +103,7 @@
     {
       "title": "modifies the customerName variable",
       "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "setBestCustomer",
-      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
